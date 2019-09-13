@@ -15,7 +15,7 @@
     --hr-margin-vertical: 0.4vw;
     --hr-margin-horizontal: 0.7vw;
 
-    --font-parent-size-unit: calc(((1vw + 1vh)/ 2));
+    --font-parent-size-unit: calc(((1vw + 1vh - 0.15vh)/ 2));
     --font-size-unit: calc(var(--font-parent-size-unit));
 }
 

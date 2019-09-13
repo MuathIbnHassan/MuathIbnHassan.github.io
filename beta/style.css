@@ -14,10 +14,9 @@
     --hr-border: 0.1vw;
     --hr-margin-vertical: 0.4vw;
     --hr-margin-horizontal: 0.7vw;
-}
 
-html {
-    height: 100.414vw;
+    --font-parent-size-unit: calc(((1vw + 1vh) / 2));
+    --font-size-unit: calc(var(--font-parent-size-unit));
 }
 
 body {
@@ -40,13 +39,13 @@ div hr {
 
 
 h1 {
-    font-size: 2.25vw;
+    font-size: calc(2.25 * var(--font-size-unit));
     font-weight: 550;
 
 }
 
 h2 {
-    font-size: 1.5vw;
+    font-size: calc(1.5 * var(--font-size-unit));
     font-weight: 400;
     margin-block-start: 1.5vw;
     margin-block-end: 0.5vw;
@@ -55,17 +54,17 @@ h2 {
 
 
 p {
-    font-size: 1.2vw;
+    font-size: calc(1.2 * var(--font-size-unit));
     font-weight: 300;
     margin-block-start: 0.5vw;
     margin-block-end: 0.5vw;
     padding: 0px 30px;
-    max-width: 80vw;
+    max-width: 75vw;
 }
 
 small {
     padding: 0px 30px;
-    font-size: 0.9vw;
+    font-size: calc(0.9 * var(--font-size-unit));
     margin-block-start: 0.5vw;
     margin-block-end: 0.5vw;
 }
@@ -78,7 +77,8 @@ th {
 
 .container {
     display: grid;
-    grid-template-columns: auto calc((var(--hr-margin-vertical) + var(--hr-border)) * 2) auto;
+
+    grid-template-columns: auto min-content auto;
     background-color: rgba(var(--inner-color-red), var(--inner-color-green), var(--inner-color-blue), var(--background-opacity));
     border-radius: var(--border-radios);
     margin: 0 0.5vw;
@@ -104,13 +104,6 @@ th {
 
 }
 
-.left {
-    width: auto;
-}
-
-.right {
-    width: auto;
-}
 
 h1 {
     margin-right: auto;
@@ -120,12 +113,12 @@ h1 {
 
 #name h1 {
     font-weight: 400;
-    font-size: 3.3vw;
+    font-size: calc(3.3 * var(--font-size-unit));
 }
 
 
 #contacts p {
-    font-size: 1.5vw;
+    font-size: calc(1.5 * var(--font-size-unit));
     font-weight: 350;
     margin-top: auto;
     margin-bottom: auto;

@@ -144,6 +144,7 @@ th {
 #name h1 {
     font-weight: 400;
     font-size: calc(3.3 * var(--font-size-unit));
+    padding-right: 0vh;
 
 }
 

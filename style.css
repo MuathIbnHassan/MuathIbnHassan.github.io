@@ -114,7 +114,7 @@ th {
     box-shadow: 0 0 0 0.07vw var(--innerColor);
     border-radius: var(--border-radios);
     background-color: var(--innerColor);
-    padding: calc(34.5px - 1vh) 1.5vw;
+    padding: 1vh 1.5vw;
     height: auto;
 
 }

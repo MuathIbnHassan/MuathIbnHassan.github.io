@@ -120,7 +120,7 @@ th {
     box-shadow: 0 0 0 0.1vw var(--innerColor);
     border-radius: var(--border-radios);
     background-color: var(--innerColor);
-    padding: calc(17.5px - 1vh) 1.5vw;
+    padding: calc(15px - 1vh) 1.5vw;
     height: auto;
 
 }

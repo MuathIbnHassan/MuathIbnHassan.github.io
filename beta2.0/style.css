@@ -73,7 +73,7 @@ p {
     font-weight: 300;
     margin-block-start: calc(0.5 * var(--font-size-unit));
     margin-block-end: calc(0.5 * var(--font-size-unit));
-    padding: 0px 40px;
+    padding: 0px 10px;
     max-width: 65vw;
 }
 
@@ -120,7 +120,7 @@ th {
     box-shadow: 0 0 0 0.1vw var(--innerColor);
     border-radius: var(--border-radios);
     background-color: var(--innerColor);
-    padding: calc(15px - 1vh) 1.5vw;
+    padding: calc(12px - 1vh) 1.5vw;
     height: auto;
 
 }
@@ -172,7 +172,7 @@ th {
     display: block;
     margin: auto;
     width: 70%;
-    padding: 2vh 0;
+    padding: 1vh 0;
     max-width: 9vw;
     /* 
     width: 60%;
@@ -201,9 +201,8 @@ th {
 }
 
 #contacts table {
-    display: table-cell;
-    vertical-align: middle;
     margin: auto;
+    padding: 1.75vh;
 }
 
 #contacts p {

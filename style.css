@@ -25,14 +25,25 @@
     --font-size-unit: calc(var(--font-parent-size-unit));
 }
 
+@page {
+    size: auto;
+    margin: 0mm;
+}
+
 html {
     display: flex;
 }
 
 body {
     background-color: var(--background-color);
-    font-family: Roboto;
+    font-family: "SF Pro Text",
+        "SF Pro Icons",
+        "Roboto",
+        "Arial",
+        sans-serif;
+    color: #333333;
 
+    padding: 1.25vh 0;
     display: grid;
     grid-template: max-content var(--hr-height) max-content var(--hr-height) max-content var(--hr-height) max-content var(--hr-height) max-content;
 
@@ -186,7 +197,7 @@ th {
 
 #my-logo-div {
     display: grid;
-    grid-template-columns: auto minmax(1.5vw, auto) max-content;
+    grid-template-columns: auto minmax(1.5vw, auto) max-content auto;
 }
 
 #my-logo-div hr {
@@ -215,6 +226,24 @@ th {
     padding-left: 0;
 }
 
+#print-button:hover {
+    background-color: rgba(var(--background-color-red), var(--background-color-green), var(--background-color-blue), var(--background-opacity));
+}
+
+#print-button {
+    width: 90%;
+    height: 3vh;
+    font-size: calc(1 * var(--font-size-unit));
+    font-weight: 350;
+
+
+
+    background-color: var(--background-color);
+    border: 1px solid var(--innerColor);
+    border-radius: var(--border-radios);
+}
+
+
 #objective h1 {
     margin-right: 5vw;
 }
@@ -225,5 +254,5 @@ th {
 
 #objective p,
 #objective h1 {
-    margin-block-end: 3vh;
+    margin-block-end: 4vh;
 }

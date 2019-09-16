@@ -2,11 +2,13 @@
 <html>
 
 <head>
+    <link rel="stylesheet" href="/wss/fonts?families=SF+Pro,v2|SF+Pro+Icons,v1" type="text/css" media="all" />
     <link href='https://fonts.googleapis.com/css?family=Roboto:100,300,350,400,500' rel='stylesheet'>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
+
     <div class="container flexed" id="header">
         <div>
             <div id="name-and-objective">
@@ -39,29 +41,29 @@
             <div class=" card" id="contacts">
                 <table>
                     <tr>
-                        <td>
-                            <p class="indented">
+                        <td class="indented">
+                            <p>
                                 Date of Birth: 06/02/1997
                             </p>
                         </td>
                     </tr>
                     <tr>
-                        <td>
-                            <p class="indented">
+                        <td class="indented">
+                            <p>
                                 +966554321144
                             </p>
                         </td>
                     </tr>
                     <tr>
-                        <td>
-                            <p class="indented">
+                        <td class="indented">
+                            <p>
                                 <a href="mailto:MuathIbnHassan@gmail.com">MuathIbnHassan@gmail.com</a>
                             </p>
                         </td>
                     </tr>
                     <tr>
-                        <td>
-                            <p class="indented">
+                        <td class="indented">
+                            <p>
                                 <a href="https://MuathIbnHassan.com">MuathIbnHassan.com</a>
                             </p>
                         </td>
@@ -74,10 +76,15 @@
                         </td>
                     </tr>
                     <tr>
-                        <td>
-                            <p class="indented">
+                        <td class="indented">
+                            <p>
                                 <a href="https://github.com/MuathIbnHassan">github.com/MuathIbnHassan</a>
                             </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="indented">
+                            <button onclick="CVprint()" id="print-button">Print This Page</button>
                         </td>
                     </tr>
                 </table>
@@ -119,21 +126,21 @@
             </h2>
             <p>
                 Smart Cities, Could Data Center and Big Data Technology ShenZhen , china
-                2016
+                2016.
             </p>
             <h2>
                 Elm company's Certificate
             </h2>
             <p>
                 completion "holom" bootcamp, iOS track King Soud university, Deanship of
-                Skills Development’s Training Rooms 2014
+                Skills Development’s Training Rooms 2014.
             </p>
             <h2>
                 Elm company's Certificate
             </h2>
             <p>
                 Participate in third elm hackathon, Al Khozama Banqueting &amp;
-                Conference Center, Riyadh 2018
+                Conference Center, Riyadh 2018.
             </p>
         </div>
     </div>
@@ -151,11 +158,11 @@
             </small>
             <p>
                 Weekly sessions discuss trending IT topics
-                provided by Specialized faculty or senior students <br /> and described it with
-                understandable language as much as possible
+                provided by Specialized faculty or senior students and described it with
+                understandable language as much as possible.
             </p>
             <h2>
-                Co-Organizer of two Programming Courses,<br>Advance C++ Programming & Python Beginner to Advanced
+                Co-Organizer of two Programming Courses, Advance C++ Programming & Python Beginner to Advanced
             </h2>
             <small>
                 At CCIS's technology club, Majma’ah university
@@ -163,10 +170,8 @@
             </small>
             <p>
                 Weekly Programming workshops for students of levels 5 and above, Aims to evolve student's knowledge
-                in
-                programming languages to mastering many advanced topics using Problem-based learning methodologies
-                and
-                techniques.
+                in programming languages to mastering many advanced topics using Problem-based learning methodologies
+                and techniques.
 
             </p>
             <h2>
@@ -180,8 +185,8 @@
             <p>
                 Famous Hour of code event, that deliver the concept of
                 programming to the young students using block-based visual programming
-                languages like scratch 2 and p.org’s tutorials, the event Produced by
-                the collage
+                languages like scratch 2 and code.org’s tutorials, the event Produced by
+                the collage.
             </p>
 
         </div>
@@ -283,5 +288,13 @@
         </table>
     </div>
 </body>
+
+<script>
+    function CVprint() {
+        document.getElementById('print-button').style.display = 'none';
+        window.print();
+        document.getElementById('print-button').style.display = 'initial';
+    }
+</script>
 
 </html>

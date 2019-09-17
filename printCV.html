@@ -5,12 +5,13 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Roboto:100,300,350,400,500' rel='stylesheet'>
     <link rel="stylesheet" href="/wss/fonts?families=SF+Pro,v2|SF+Pro+Icons,v1" type="text/css" media="all">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="CVstyle.css">
     <script>
         $(document).ready(function () {
-            $("#print-button").click(function () {
-                var myWindow = window.open("printCV.html", "", "width = 794, height = 1123");
-            });
+            setTimeout(function () {
+                print();
+
+            }, 1000);
 
         });
     </script>
@@ -19,7 +20,7 @@
 
 <body>
 
-    <div class="container flexed" id="header">
+    <div class="container" id="header">
         <div>
             <div id="name-and-objective">
                 <div id="my-logo-div">
@@ -92,11 +93,7 @@
                             </p>
                         </td>
                     </tr>
-                    <tr>
-                        <td id="print-button-parrent" class="indented">
-                            <button id="print-button">Print This Page</button>
-                        </td>
-                    </tr>
+
                 </table>
             </div>
         </div>

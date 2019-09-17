@@ -10,6 +10,7 @@
         $(document).ready(function () {
             $("#print-button").click(function () {
                 $('link[href="style.css"]').attr('href', 'CVstyle.css');
+                $('#my-logo').attr('src', 'resourses/myLogoGray.svg');
                 setTimeout(function () { window.print(); }, 1000);
                 setTimeout(function () { $('link[href="CVstyle.css"]').attr('href', 'style.css'); }, 5000);
             });

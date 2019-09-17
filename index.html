@@ -9,9 +9,10 @@
     <script>
         $(document).ready(function () {
             $("#print-button").click(function () {
-                var myWindow = window.open("printCV.html", "", "width = 794, height = 1123");
+                $('link[href="style.css"]').attr('href', 'CVstyle.css');
+                setTimeout(function () { window.print(); }, 1000);
+                setTimeout(function () { $('link[href="CVstyle.css"]').attr('href', 'style.css'); }, 5000);
             });
-
         });
     </script>
 

@@ -216,6 +216,11 @@ th {
     padding-left: 0;
 }
 
+#print-button-parrent {
+    display: none;
+}
+
+
 #print-button:hover {
     background-color: rgba(var(--background-color-red), var(--background-color-green), var(--background-color-blue), var(--background-opacity));
 }

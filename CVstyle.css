@@ -8,7 +8,7 @@
     --background-color-green: 255;
     --background-color-blue: 255;
     --background-color: rgb(var(--background-color-red), var(--background-color-green), var(--background-color-blue));
-    --background-opacity: 40%;
+    --background-opacity: 35%;
     --border-radios: 5px;
 
     --hr-border: 2px;
@@ -36,6 +36,11 @@ html {
     width: 794px;
 }
 
+* {
+    text-decoration: none;
+    color: #333333;
+}
+
 body {
     background-color: var(--background-color);
     font-family: "SF Pro Text",
@@ -43,7 +48,7 @@ body {
         "Roboto",
         "Arial",
         sans-serif;
-    color: #333333;
+
 
     padding: 40px 20px;
     margin: 0px;
@@ -231,7 +236,8 @@ th {
 }
 
 #objective h1 {
-    margin: 15px
+    margin: 15px;
+    margin-left: 0;
 }
 
 #objective p {

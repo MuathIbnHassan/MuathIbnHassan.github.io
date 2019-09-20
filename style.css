@@ -32,12 +32,12 @@
 
 html {
     display: flex;
-    width: 100vw;
+    width: auto;
 }
 
 body {
     background-color: var(--background-color);
-    font-family: -apple-system, Courier New, BlinkMacSystemFont, sans-serif,Arial , Roboto ;
+    font-family: -apple-system, Courier New, BlinkMacSystemFont, sans-serif, Arial, Roboto;
     color: #333333;
 
     padding: 1.25vh 0;

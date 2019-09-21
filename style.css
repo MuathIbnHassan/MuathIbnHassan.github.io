@@ -31,13 +31,14 @@
 }
 
 html {
-    display: flex;
-    width: auto;
+
+    width: 100%;
+
 }
 
 body {
     background-color: var(--background-color);
-    font-family: -apple-system, Courier New, BlinkMacSystemFont, sans-serif, Arial, Roboto;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif, Arial, Roboto;
     color: #333333;
 
     padding: 1.25vh 0;
@@ -125,7 +126,7 @@ th {
 
 .card {
     border: solid 0.25vw var(--innerColor);
-    box-shadow: 0 0 0 0.1vw var(--innerColor);
+    box-shadow: 0 0 0 0.15vw var(--innerColor);
     border-radius: var(--border-radios);
     background-color: var(--innerColor);
     padding: calc(12px - 1vh) 1.5vw;
@@ -168,6 +169,8 @@ th {
 #name-and-objective {
     display: grid;
     grid-template-rows: auto min-content auto;
+    height: 100%;
+
 }
 
 
@@ -204,8 +207,8 @@ th {
 }
 
 #contacts {
-    display: table;
     height: 100%;
+    -webkit-box-sizing: border-box;
 }
 
 #contacts table {

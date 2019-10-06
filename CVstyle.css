@@ -103,11 +103,16 @@ small {
     margin-block-end: calc(0.5 * var(--font-size-unit));
 }
 
-th h1,
-td h4,
+th h4,
+td h5,
 td p {
-    margin-block-start: 7px;
-    margin-block-end: 0;
+    margin-block-start: 5px;
+    margin-block-end: 5px;
+    padding: 0;
+}
+
+td h5 {
+    font-weight: 500;
 }
 
 td h4 {
@@ -161,6 +166,20 @@ th {
 
 .indented {
     text-indent: calc(1.375 * var(--font-size-unit))
+}
+
+h2,
+.material-icons {
+    font-size: calc(1.5 * var(--font-size-unit));
+    font-weight: 400;
+    margin-block-start: calc(1.5 * var(--font-size-unit));
+    margin-block-end: calc(0.5 * var(--font-size-unit));
+}
+
+.skills-header {
+    display: grid;
+    grid-template-columns: auto min-content min-content min-content min-content min-content;
+
 }
 
 #header {

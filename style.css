@@ -32,7 +32,7 @@
 
 html {
 
-    width: 100%;
+    width: auto;
 
 }
 
@@ -69,11 +69,18 @@ h1 {
     margin-block-end: calc(1 * var(--font-size-unit));
 }
 
-h2 {
+h2,
+.material-icons {
     font-size: calc(1.5 * var(--font-size-unit));
     font-weight: 400;
     margin-block-start: calc(1.5 * var(--font-size-unit));
     margin-block-end: calc(0.5 * var(--font-size-unit));
+}
+
+.skills-header {
+    display: grid;
+    grid-template-columns: auto min-content min-content min-content min-content min-content;
+
 }
 
 p {
@@ -93,12 +100,19 @@ small {
     margin-block-end: calc(0.5 * var(--font-size-unit));
 }
 
-th h1,
-td h4,
+th h4,
+td h5,
 td p {
-    margin-block-start: 0.4vw;
-    margin-block-end: 0;
+    margin-block-start: 0.5vw;
+    margin-block-end: 0.5vw;
+    padding: 0 5px 0 0;
 }
+
+td h5 {
+    font-size: calc(1.2 * var(--font-size-unit));
+    font-weight: 500;
+}
+
 
 table,
 th,
@@ -208,6 +222,7 @@ th {
 
 #contacts {
     height: 100%;
+    box-sizing: border-box;
     -webkit-box-sizing: border-box;
 }
 
@@ -243,6 +258,15 @@ th {
     border-radius: var(--border-radios);
 }
 
+#objective {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+#material-icon {
+    font-size: inherit;
+    padding: 10px
+}
 
 #objective h1 {
     margin-right: 5vw;
@@ -254,5 +278,5 @@ th {
 
 #objective p,
 #objective h1 {
-    margin-block-end: 4vh;
+    margin-block-end: 3vh;
 }

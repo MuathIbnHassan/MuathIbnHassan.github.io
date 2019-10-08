@@ -30,6 +30,14 @@
     margin: 0mm;
 }
 
+@media screen and (max-device-width: 480px) {
+
+    /* Fixing auto resizing on Safari for iOS */
+    body {
+        -webkit-text-size-adjust: none;
+    }
+}
+
 html {
 
     width: auto;
@@ -131,7 +139,7 @@ th {
 
 .container {
     display: grid;
-    grid-template-columns: auto min-content auto;
+    grid-template-columns: minmax(25%, auto) min-content minmax(25%, auto);
     background-color: rgba(var(--inner-color-red), var(--inner-color-green), var(--inner-color-blue), var(--background-opacity));
     border-radius: var(--border-radios);
     margin: 0 0.5vw;

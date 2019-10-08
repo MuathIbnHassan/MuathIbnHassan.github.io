@@ -205,7 +205,7 @@ th {
     display: block;
     margin: auto;
     width: 70%;
-    padding: 1vh 0;
+    padding: 20% 0;
     max-width: 9vw;
     /* 
     width: 60%;
@@ -236,7 +236,7 @@ th {
 
 #contacts table {
     margin: auto;
-    padding: 1.75vh;
+    padding: 0.75vh;
     height: 100%;
 }
 
@@ -256,9 +256,10 @@ th {
 
 #print-button {
     width: 90%;
-    height: 3vh;
+    height: 175%;
     font-size: calc(1 * var(--font-size-unit));
     font-weight: 350;
+
 
 
 

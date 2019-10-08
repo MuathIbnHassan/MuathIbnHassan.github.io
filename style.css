@@ -229,6 +229,7 @@ th {
 #contacts table {
     margin: auto;
     padding: 1.75vh;
+    height: 100%;
 }
 
 #contacts p {

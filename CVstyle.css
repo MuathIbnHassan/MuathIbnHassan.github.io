@@ -230,6 +230,7 @@ h2,
 #contacts table {
     margin: auto;
     padding: 10px 15px;
+    height: 100%;
 }
 
 #contacts p {
@@ -237,7 +238,7 @@ h2,
     font-weight: 350;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 0;
+    padding: 2px;
 }
 
 #print-button-parrent {
